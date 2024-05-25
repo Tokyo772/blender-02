@@ -11,6 +11,12 @@ export const Todos = () => {
       return [...prevState, { text, id: nanoid() }];
     });
   };
+
+  const delTodos = (id) => {
+    setTodos((prevState) => {
+      return prevState.filter((el)=>)
+    })
+  }
   return (
     <>
       <Form onSubmit={addTodos} />
