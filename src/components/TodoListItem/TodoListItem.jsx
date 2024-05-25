@@ -3,8 +3,10 @@ import { RiDeleteBinLine } from 'react-icons/ri';
 
 import style from './TodoListItem.module.css';
 
-export const TodoListItem = ({ text, count }) => {
-  const HandleClick = () => {};
+export const TodoListItem = ({ id, text, count, delTodos }) => {
+  const handleClick = () => {
+    delTodos(id);
+  };
 
   return (
     <GridItem>
